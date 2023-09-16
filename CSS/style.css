@@ -172,24 +172,43 @@ padding: 10px;
 
 @media only screen and (max-width: 600px) {
     .containerGrid {
-        
-      grid-template-columns: 1fr; 
-        grid-template-areas:
-        "header"
-          "skills"
-          "skills"
-          "tools"
-          "rectangle"
-          "footer";
-        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-rows: 50px auto auto 50px;
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+        top: 0;
+        right: 0;
     }
     .skills {
-        grid-template-areas:
-            "title"
-            "title"
-            "title";
-        grid-template-columns: 1fr;
-        padding: 10px;
-       
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        order: 2; /* Ensure that skills appear below the header */
+    }
+
+    .tools {
+        width: 100%;
+        order: 3; /* Ensure that tools appear below the skills */
+    }
+
+    .rectangle {
+        order: 4; /* Ensure that rectangle appears below the tools */
+    }
+
+    .footer {
+        order: 5; /* Ensure that footer appears at the bottom */
     }
 }
+    }
+    
+   
+
