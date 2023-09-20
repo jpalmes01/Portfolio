@@ -3,17 +3,6 @@ body{
     width: 100%; max-width: 1440px;
 }
 
-.containerGrid2 {
-display: grid;
-grid-template-areas:
-"header"
-  "work"
-  "rectangle"
-  "footer";
-grid-template-columns: 1fr;
-
-}
-
 .containerGrid {
     display: grid;
     grid-template-areas:
@@ -22,8 +11,7 @@ grid-template-columns: 1fr;
       "rectangle rectangle rectangle"
       "footer footer footer";
     grid-template-columns: 500px 500px 300px;
-    padding: 10px;
-    
+    padding: 10px; 
     }
 
 .inline-block .logo {
@@ -157,8 +145,73 @@ grid-template-columns: 1fr;
     width: 100%;
 
 }
+/* My WorK */
+.myWork {
+    padding: 60px 30px;
+    padding-top: 0;
+    margin-left: 70px;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas:
+    "img1 content1"
+    "img2 content2"
+    "img3 content3"
+    ;
+    grid-gap: 20px;
+    justify-content: center;
+  
+  }
+  .workGrid img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+    
+  }
+  .img1 {
+    grid-area: img1;
+    background-color: #4678A5;
+  }
+  .img2 {
+    grid-area: img2;
+    background-color:#FFBA44;
+  }
+  .img3 {
+    grid-area: img3;
+    background-color: darkviolet;
+  }
+  .img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 80px;
+  }
+  .content1 {
+    grid-area: content1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
 
-
+  }
+  .content2 {
+    grid-area: content2;
+  }
+  .content3 {
+    grid-area: content3;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Glacial Indifference', sans-serif;
+    src: url(/Resources/GlacialIndifference-Regular.woff)
+}
+    p {
+    font-size: 16px;
+    font-family: 'Glacial Indifference', sans-serif;
+    src: url(/Resources/GlacialIndifference-Regular.woff);
+    text-align: left;
+    }
 .rectangle {
     display: flex;
     grid-area: rectangle;
@@ -202,7 +255,7 @@ grid-template-columns: 1fr;
     align-items: right;
 }
 
-
+/* media query for skills */
 @media only screen and (max-width: 600px) {
     .containerGrid {
         width: 100%;
@@ -243,5 +296,27 @@ grid-template-columns: 1fr;
 }
     }
     
-   
-
+   /*media query for work  */
+   @media only screen and (max-width: 600px) {
+    .myWork {
+      padding: 60px 30px;
+      padding-top: 0;
+      margin-left: 0; 
+    }
+  
+    .workGrid {
+      grid-template-columns: 1fr; 
+      grid-template-areas:
+        "img1"
+        "content1"
+        "img2"
+        "content2"
+        "img3"
+        "content3"
+      ;
+    }
+  
+    .content1, .content2, .content3 {
+      padding: 20px; 
+    }
+  }
