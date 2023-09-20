@@ -117,31 +117,42 @@ skills {
 .tools {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding: 20px;
     padding-left: 0px;
+    padding-right: 20px;
     }
 .tooltitle {
     text-align: left;
     font-family: 'Glacial Indifference', sans-serif;
     src: url(/Resources/GlacialIndifference-Regular.woff);
     padding-left: 20px;
-    margin-top: -20px;
+    
     }
-.toolslist {
-    display: grid;
-    list-style-type: none;
-    background-color: #F6CBC2;
-    border: 10px ridge #FFC6AC;
-    font-family: 'Glacial Indifference', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    padding: 40px;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    height: 390px;
-    flex-grow: 1;
+    .toolslist {
+        display: flex;
+        flex-direction: column; 
+        list-style-type: none;
+        background-color: #F6CBC2;
+        border: 10px ridge #FFC6AC;
+        font-family: 'Glacial Indifference', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 40px;
+        padding-bottom: 0px;
+        margin-top: 40px;
+        align-items: left;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        flex-grow: 1;
     }
+    
+    .toolslist li {
+        margin-bottom: 37px; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
     
 /* footer */
 .footer {
@@ -170,15 +181,20 @@ skills {
     /* Media Query Skills */
     @media only screen and (max-width: 600px) {
         .containerGrid {
-            width: 100%;
-            display: block;
+            width: 560px;
+            display: grid;
+            grid-template-areas: 'header'
+                                'skills'
+                                'tools'
+                                'footer';
             flex-direction: column;
             align-items: center;
         }
         .skills-container {
+            display: block;
             grid-column: auto; 
+            grid-template-columns: 1fr;
             grid-row: auto;
-            display: flex; 
             flex-direction: column;
             align-items: center;
             margin-bottom: 20px;
