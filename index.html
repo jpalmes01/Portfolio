@@ -1,84 +1,171 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+    <!--Boootr-->
     <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Glacial+Indifference" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Skills</title>
+    <title>Portfolio</title>
 </head>
-    <body>
-        <header>
-            <div class="containerGrid">
-                <div class="container">
-                    <a href="https://jpalmes01.github.io/UX_UI_HW_19/">
-                    <div class="inline-block logo">
-                        <img src="Images/JP Logo.png" alt="logo" width="200px" height="200px">
-                    </div>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Portfolio
                     </a>
-                    <nav class="inline-block header">
-                        <ul class="topnav">
-                            <li class="special-style">
-                                <a href="https://jpalmes01.github.io/About/">About</a>
-                            </li>
-                            <li class="inline-block">
-                                <a href="https://jpalmes01.github.io/Portfolio/">Portfolio</a>
-                            </li>
-                            <li class="inline-block">Resume</a></li>
-                            <li class="inline-block">Contact</li>
-                        </ul>
-                    </nav>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Greyhounds Oasis</a></li>
+                      <li><a class="dropdown-item" href="#">Department of Education</a></li>
+                      <li><a class="dropdown-item" href="#">TeachReach</a></li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="containerGrid">
+        <div class="container">
+            <a href="https://jpalmes01.github.io/UX_UI_HW_19/">
+            <div class="inline-block logo">
+                <img src="Images/JP Logo.png" alt="logo" width="200px" height="200px">
+            </div>
+            </a>
+            <nav class="inline-block header">
+                <ul class="topnav">
+                    <li class="inline-block">
+                        <a href="https://jpalmes01.github.io/About/">About</a>
+                      </li>
+                    <li class="inline-block">
+                        <a href="https://jpalmes01.github.io/Portfolio/">Portfolio</a>
+                    </li>
+                    <li class="inline-block">Resume</a></li>
+                    <li class="inline-block">Contact</li>
+                </ul>
+            </nav>
+        </div>
+<!-- Hero Section -->
+        <section id="heroGrid">
+            <div class="container" style="display: grid; grid-template-columns: 1fr;">
+                <div class="hero-grid-item1">
+                    <h1>I'm Joliot Palmes, <br>
+                    a user experience designer.</h1>
                 </div>
-        </header>
-   <!-- Skills -->
-<div class="skills">
-    <div class="sktitle">
-        <h1>My UX skills are</h1>
+                <div class="hero-grid-item2" style="width: 100%; height: 240px;">
+                    <h2>Let’s <span style="color: #F2A4A2; font-weight: bold;">collaborate</span>
+                    to create impactful, <br>
+                    mission-focused experiences.</h2>
+                </div>
+                <div class="hero-button">
+                    <button>Get in Touch</button>
+                </div>
+                <div class="bounceMe-container">
+                    <img class="bounceMe" src="Images/Rectangle 7.png">
+                </div>
+                <div class="gif-container">
+                    <img class="plantGif" src="Images/plantgif2.gif">
+                </div>
+            </div>
+      </section>
+<!-- Work  -->
+<div class="grid-container">
+    <div class="grid-item1">
+        <div class="left-column">
+            <img src="Images/Greyhound (1).png" alt="Image1" alt="img1" width="500px" height="250px">
+        </div>
+        <div class="right-column">
+            <div class="work-heading">
+                <h1>Greyhounds Oasis</h1>
+            </div>
+            <div class="work-text">
+                <h3>Giving a rescue website a fresh, new look </h3>
+            </div>
+            <div class="work-button">
+                <button>Case Study</button>
+            </div>
+        </div>
     </div>
-    <div class="skills-container"> 
-        <div class="skill">
-            <img src="Images/1.png" alt="search" width="150px" height="150px">
-            <h3>User Research</h3>
-            <p>Embracing the Double Diamond process in my UX design journey, I place a strong emphasis on user research to inform every step of the design process. This approach involves four key stages: Discover, Define, Develop, and Deliver.</p>
+    <div class="grid-item2">
+        <div class="left-column2">
+            <img src="Images/DoE Cover.png" alt="Image2" alt="img1" width="500px" height="250px">
         </div>
-        <div class="skill">
-            <img src="Images/2.png" alt="empath" width="150px" height="150px">
-            <h3>User Empathy</h3>
-            <p>My approach to crafting user personas includes user interviews to gather insights, persona development to create relatable user profiles, and journey mapping to visualize experiences. Employing usability testing, empathy maps, and storyboarding help ensure personas are rooted in real-world user behaviors and emotions.</p>
+        <div class="right-column2">
+            <div class="work-heading">
+                <h1>Department of Education</h1>
+            </div>
+            <div class="work-text2">
+                <h3>Updating a government website and user flow</h3>
+            </div>
+            <div class="work-button2">
+                <button>Case Study</button>
+            </div>
         </div>
-        <div class="skill">
-            <img src="Images/3.png" alt="QI" width="150px" height="150px">
-            <h3>Qualitative Interviews</h3>
-            <p>My approach to qualitative interviews involves preparing open-ended questions, recruiting participants, and conducting interviews while exploring emotions and probing for details. After the interview, I record and transcribe data, analyzing patterns and synthesizing themes, and using insights gained for user-centered design.</p>
+    </div>
+    <div class="grid-item3">
+        <div class="left-column3">
+            <img src="Images/TRcover.png" alt="Image3" alt="img1" width="500px" height="250px">
+        </div>
+        <div class="right-column3">
+            <div class="work-heading">
+                <h1>TeachReach</h1>
+            </div>
+            <div class="work-text3">
+                <h3>Helping teachers connect with their local community</h3>
+            </div>
+            <div class="work-button3">
+                <button>Case Study</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-- footer -->
+<div id="rectangle">
+</div>
+<div class="footer">
+    <div class="left-column4">
+        <img src="Images/Coffee.png" alt="coffee" alt="img1" width="600px" height="400px">
+    </div>
+    <div class="right-column4">
+        <div class="work-heading">
+            <h1>I'd love to hear from you!</h1>
+        </div>
+        <div class="form-row1">
+            <h3>Email:</h3>
+            <input id="contact-form-email" class="form-input" type="email" name="email" required>
+          </div>
+          <div class="form-row2">
+            <h3>Message:</h3>
+            <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
         </div>
     </div>
 </div>
 
-<!-- Tools -->
-    <div class="tools">
-        <div class="tool">
-            <div class="tooltitle">
-                <h1>Tools</h1>
-            </div>
-            <ul class="toolslist">
-                <li>Canva</li>
-                <li>Figjam</li>
-                <li>Figma</li>
-                <li>Google Drive</li>
-                <li>Paper and Pencil</li>
-                <li>Trello</li>
-        </div>
-    </div>
-<!-- Footer -->
-    <div class="footer">
-        <div class="rectangle">
-        </div>
+
+
+
     <div class="copyright">
-        <p>&#169;&nbsp;Joliot Palmes&nbsp;2023</p>
+    <p>&#169;&nbsp;2023 Portfolio - Joliot Palmes</p>
     </div>
-</div>
-</body>
+
+<script src="JS/index.js"></script>
 </html>
-   
+
