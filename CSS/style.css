@@ -657,35 +657,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Our Clients
---------------------------------------------------------------*/
-.clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-.clients .swiper-slide img:hover {
-  opacity: 1;
-}
-
-.clients .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #4678A5;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4678A5;
-}
-
-/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
@@ -836,25 +807,6 @@ section {
   color: #fff;
 }
 
-.cta .cta-btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 2px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 4px;
-}
-
-.cta .cta-btn:hover {
-  background: #fff;
-  color: #4678A5;
-}
 
 @media (max-width: 1024px) {
   .cta {
