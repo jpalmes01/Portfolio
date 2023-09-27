@@ -1,6 +1,11 @@
-
+@font-face {
+  font-family: "Lusitana";
+  src: url("/Resources/Lusitana-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #444444;
 }
 
